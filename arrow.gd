@@ -10,5 +10,7 @@ func _process(delta: float) -> void:
 	label.text = "Angle: %3.f" % slider.value
 	radian_label.text = "Radians: %3.5f" % radians
 	
-	sprite_2d.flip_h = radians <= PI/2 || radians >= (3*PI)/2
+	# TAU is PI*2 allowing for easier to understand fractional circles
+	# Join the revolution: https://www.tauday.com/tau-manifesto
+	sprite_2d.flip_h = radians <= TAU/4 || radians >= (3*TAU)/4
 	
