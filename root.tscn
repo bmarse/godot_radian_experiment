@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw4ww3hbfu0lr"]
+
+[ext_resource type="PackedScene" uid="uid://c8ohmg3r6p252" path="res://arrow.tscn" id="1_pq8q7"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="arrow" parent="." instance=ExtResource("1_pq8q7")]
+position = Vector2(510, 273)
